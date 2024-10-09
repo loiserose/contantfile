@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+     font-family: "poppins", sans-serif; 
+}
+body { 
+     display: flex; 
+    padding: 0 10px; 
+     align-items: center; 
+    justify-content: center; 
+     min-height: 100vh; 
+     width: 100%; 
+     background-color: blue; 
+ } 
+ .wrapper{ 
+    /* color: cyan ; */ 
+    width: 720px; 
+     /* height: 250px;  */
+     background: white; 
+    border-radius: 5px; 
+     text-align: center; 
+
+ } 
+.wrapper header{ 
+    font-size: 22px; 
+     font-weight: 600; 
+    padding: 20px 30px; 
+     border-bottom: 1px solid #bfbfbf; 
+
+ } 
+.wrapper form{
+    margin: 35px 30px; 
+} 
+  form .dblfield{ 
+      display: flex;  
+     align-items: center; 
+     margin-bottom: 25px; 
+    justify-content: space-between; 
+   
+ } 
+.dblfield .field{ 
+    height: 50px;  
+    position: relative;
+    /* background-color: red;   */
+    width: calc(100% / 2-13px); 
+     padding: 10px; 
+ } 
+ form .field input,
+ form .message textarea{
+height: 100%;
+width: 100%;
+outline: none;
+padding: 0 18px  0 48px;
+font-size: 16px;
+border-radius: 5px;
+border: 1px solid #bfbfbf;
+ }
+ form .field input::placeholder,
+ form .message textarea::placeholder{
+    color: #bfbfbf;
+ }
+ .wrapper form i{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #bfbfbf;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+
+ }
+ form.message{
+    position: relative;
+ }
+ form .message i{
+    top: 20px;
+    font-size: 20px;
+ }
+form.message textarea{
+    min-height: 120px;
+    padding: 15px 20px 0 48px;
+    
+}
+
